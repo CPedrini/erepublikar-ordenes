@@ -2,7 +2,12 @@
 <html>
 	<head>
 		<title></title>
-		<link href="reset.css"  media="all" rel="stylesheet" type="text/css" />
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
 		<link href="style.css"  media="all" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
@@ -30,129 +35,101 @@
 			];
 		}
 		?>
-		<div>
-			<div class="cd-tabs">
-				<nav>
-					<ul class="cd-tabs-navigation">
-						<li class="selected">
-							<a data-content="D1" href="#0">
-								<h3>D1</h3>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2 fixed-width">
+					<ul class="nav nav-pills">
+						<li class="active">
+							<a data-content="div_1" href="#">
+								D1
 							</a>
 						</li>
 						<li>
-							<a data-content="D2" href="#0">
-								<h3>D2</h3>
+							<a data-content="div_2" href="#">
+								D2
 							</a>
 						</li>
 						<li>
-							<a data-content="D3" href="#0">
-								<h3>D3</h3>
+							<a data-content="div_3" href="#">
+								D3
 							</a>
 						</li>
 						<li>
-						<a data-content="D4" href="#0">
-								<h3>D4</h3>
+							<a data-content="div_4" href="#">
+								D4
 							</a>
 						</li>
-					</ul> <!-- cd-tabs-navigation -->
-				</nav>
-
-				<ul class="cd-tabs-content">
-					<li data-content="D1" class="selected">
+					</ul>
+				</div>
+				<div id="divisions" class="col-xs-10">
+					<div id="div_1" class="row orders">
 						<?php
 
 						foreach ($data as $bat) {
 						?>
-						<a target="_blank" href="<?php echo $bat['link']; ?>">
-							<div class="btn">
-								<div class="first">
-									<h4><?php echo $bat['prio_d1']; ?></h4>
-									<h5><?php echo $bat['for']; ?></h5>
-
-									<h5><?php echo $bat['region']; ?></h5>
-								</div>
-								<div>
-									<h6>PELEAR</h6>
-								</div>
-							</div>		
+						<a class="btn btn-primary" target="_blank" href="<?php echo $bat['link']; ?>">
+							<h4><?php echo $bat['prio_d1']; ?></h4>
+							<p><?php echo $bat['for']; ?></p>
+							<p><?php echo $bat['region']; ?></p>
+							<h6>PELEAR</h6>
 						</a>
 						<?php
 						}
 						?>
-					</li>
-
-					<li data-content="D2">
+					</div>
+					<div id="div_2" class="row orders" style="display: none;">
 						<?php
 
 						foreach ($data as $bat) {
 						?>
-						<a target="_blank" href="<?php echo $bat['link']; ?>">
-							<div class="btn">
-								<div class="first">
-									<h4><?php echo $bat['prio_d2']; ?></h4>
-									<h5><?php echo $bat['for']; ?></h5>
-
-									<h5><?php echo $bat['region']; ?></h5>
-								</div>
-								<div>
-									<h6>PELEAR</h6>
-								</div>
-							</div>		
+						<a class="btn btn-primary" target="_blank" href="<?php echo $bat['link']; ?>">
+							<h4><?php echo $bat['prio_d2']; ?></h4>
+							<p><?php echo $bat['for']; ?></p>
+							<p><?php echo $bat['region']; ?></p>
+							<h6>PELEAR</h6>
 						</a>
 						<?php
 						}
 						?>
-					</li>
-
-					<li data-content="D3">
+					</div>
+					<div id="div_3" class="row orders" style="display: none;">
 						<?php
 
 						foreach ($data as $bat) {
 						?>
-						<a target="_blank" href="<?php echo $bat['link']; ?>">
-							<div class="btn">
-								<div class="first">
-									<h4><?php echo $bat['prio_d3']; ?></h4>
-									<h5><?php echo $bat['for']; ?></h5>
-
-									<h5><?php echo $bat['region']; ?></h5>
-								</div>
-								<div>
-									<h6>PELEAR</h6>
-								</div>
-							</div>		
+						<a class="btn btn-primary" target="_blank" href="<?php echo $bat['link']; ?>">
+							<h4><?php echo $bat['prio_d3']; ?></h4>
+							<p><?php echo $bat['for']; ?></p>
+							<p><?php echo $bat['region']; ?></p>
+							<h6>PELEAR</h6>
 						</a>
 						<?php
 						}
 						?>
-					</li>
-
-					<li data-content="D4">
+					</div>
+					<div id="div_4" class="row orders" style="display: none;">
 						<?php
 
 						foreach ($data as $bat) {
 						?>
-						<a target="_blank" href="<?php echo $bat['link']; ?>">
-							<div class="btn">
-								<div class="first">
-									<h4><?php echo $bat['prio_d4']; ?></h4>
-									<h5><?php echo $bat['for']; ?></h5>
-
-									<h5><?php echo $bat['region']; ?></h5>
-								</div>
-								<div>
-									<h6>PELEAR</h6>
-								</div>
-							</div>		
+						<a class="btn btn-primary" target="_blank" href="<?php echo $bat['link']; ?>">
+							<h4><?php echo $bat['prio_d4']; ?></h4>
+							<p><?php echo $bat['for']; ?></p>
+							<p><?php echo $bat['region']; ?></p>
+							<h6>PELEAR</h6>
 						</a>
 						<?php
 						}
 						?>
-					</li>
-				</ul> <!-- cd-tabs-content -->
-			</div> <!-- cd-tabs -->
+					</div>
+				</div>
+			</div>
 		</div>
+		<!-- Latest compiled and minified jQuery JavaScript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 		<script src="main.js"></script> <!-- Resource jQuery -->
 	</body>
 </html>
