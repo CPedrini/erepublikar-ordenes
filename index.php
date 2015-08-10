@@ -16,9 +16,14 @@
 
 		$data = [];
 
+		$message1 = explode(",", $address[23]);
+		$message = $message1[2];
+		
+
+
 		for($i = 2; $i < 10; $i++) {
 			$parts = explode(",", $address[$i]);
-
+			
 			if ($parts[1] == "")
 				continue;
 
@@ -32,6 +37,8 @@
 				'prio_d4' => $parts[6],
 				'for' => $parts[7],
 				'against' => $parts[10],
+				
+				
 			];
 		}
 		?>
@@ -119,11 +126,17 @@
 							<h6>PELEAR</h6>
 						</a>
 						<?php
+
 						}
 						?>
 					</div>
+
+					
 				</div>
 			</div>
+		</div>
+		<div class="container" style="padding-left: 15px;">
+			<div class="center-block alert alert-info col-md-6" role="alert"><?php echo 'Mesaje del MoD: '.$message   ?></div>					
 		</div>
 		<!-- Latest compiled and minified jQuery JavaScript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
