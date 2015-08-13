@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title></title>
@@ -135,8 +135,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="container" style="padding-left: 15px;">
-			<div class="center-block alert alert-info col-md-6" role="alert"><?php echo 'Mesaje del MoD: '.$message   ?></div>					
+		
+		<div class="center-block alert alert-info col-md-6" role="alert" style="width: 963px;float: left;margin: 5px 0 0 0;">
+			<?php echo 'Mesaje del MoD: '.$message   ?>					
 		</div>
 		<!-- Latest compiled and minified jQuery JavaScript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
